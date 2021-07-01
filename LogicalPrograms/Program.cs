@@ -9,7 +9,7 @@ namespace LogicalPrograms
             Console.WriteLine("Welcome to Logical Programs");
             
             Console.WriteLine("Choose The Program You Want Run");
-            Console.WriteLine("1)Fibanocci Series \n2)Perfect Number \n3)PrimeNumber\n4)ReverseNumber\n5)Exit");
+            Console.WriteLine("1)Fibanocci Series \n2)Perfect Number \n3)PrimeNumber\n4)ReverseNumber\n5)DistinctCoupon6)Exit");
             Console.WriteLine("Choose one");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -25,6 +25,9 @@ namespace LogicalPrograms
                     break;
                 case 4:
                     ReverseNumber.ReadInput();
+                    break;
+                case 5:
+                    CouponNumber.ReadInput();
                     break;
                 default:
                     Console.WriteLine("Choose Correct Option");
